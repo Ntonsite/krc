@@ -5,11 +5,14 @@ services:
     restart: always
     ports:
       - "80:80"
-      - "8404:8404"
+      - "8404:8404" # Expose HAProxy stats port
     volumes:
       - ./haproxy:/usr/local/etc/haproxy
     depends_on:
       - nginx
+      - church-app1
+      - church-app2
+      - church-app3
 
   nginx:
     image: nginx:alpine
@@ -17,6 +20,7 @@ services:
     restart: always
     expose:
       - "80"
+
   church-app1:
     image: church-app1:latest
     container_name: church-app1
