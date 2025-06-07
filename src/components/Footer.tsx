@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/kinondonirevivalchurch/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-church-orange hover:bg-church-orangeDark text-white p-2 rounded-full transition-colors"
@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
                 <span className="sr-only">Facebook</span>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/kinondonirevivalchurch/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-church-orange hover:bg-church-orangeDark text-white p-2 rounded-full transition-colors"
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
                 <span className="sr-only">Instagram</span>
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/channel/UCLoFLm7vLwGvQ4YfPgosE1A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-church-orange hover:bg-church-orangeDark text-white p-2 rounded-full transition-colors"
