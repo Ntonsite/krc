@@ -1,10 +1,21 @@
 services:
-  elb:
-    image: haproxy
+  haproxy:
+    image: haproxy:latest
+    container_name: haproxy
+    restart: always
     ports:
-      - "8100:8100"
+      - "80:80"
     volumes:
-      - ./haproxy:/usr/local/etc/haproxy
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    depends_on:
+      - nginx
+
+  nginx:
+    image: nginx:alpine
+    container_name: webserver
+    restart: always
+    expose:
+      - "80"
   church-app1:
     image: church-app1:latest
     container_name: church-app1
