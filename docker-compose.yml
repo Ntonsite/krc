@@ -5,7 +5,6 @@ services:
     restart: always
     ports:
       - "80:80"
-      - "8404:8404" # Expose HAProxy stats port
     volumes:
       - ./haproxy:/usr/local/etc/haproxy
     depends_on:
