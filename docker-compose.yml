@@ -5,7 +5,7 @@ services:
     restart: always
     ports:
       - "80:80"
-      - "8404:8404"
+      - "8404:80"
     volumes:
       - ./haproxy:/usr/local/etc/haproxy
     depends_on:
